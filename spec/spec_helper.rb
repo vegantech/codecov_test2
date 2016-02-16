@@ -26,7 +26,7 @@ module SimpleCov
           absolute = File.expand_path(file)
 	  puts file
 
-          result[absolute] ||= [-1] * File.foreach(absolute).count
+          result[absolute] ||= [] #* File.foreach(absolute).count
         end
       end
 
